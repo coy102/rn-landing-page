@@ -13,7 +13,6 @@ const MenuButton = ({ img, label }: Props) => (
   <TouchableOpacity>
     <Box p={4} px={10} display="flex" alignItems="center">
       <Image
-        // eslint-disable-next-line global-require
         source={{
           uri: img,
         }}

@@ -8,6 +8,7 @@ let typography: SimpleStyleFunction<
   | 'letterSpacing'
   | 'lineHeight'
   | 'textAlign'
+  | 'color'
 >
 
 export type TypographyProps = PropsFor<typeof typography>

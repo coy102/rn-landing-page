@@ -5,6 +5,7 @@ import { TypographyProps } from './interface'
 interface Props extends TypographyProps {}
 
 const Typography = styled.Text<Props>({}, (props) => ({
+  color: props.color,
   fontFamily: props.fontFamily,
   fontSize: props.fontSize,
   fontStyle: props.fontStyle,
