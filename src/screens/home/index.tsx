@@ -1,7 +1,8 @@
 import React from 'react'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import Container from '../../components/core/Container'
+import MenuList from '../../modules/MenuList'
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
       }}
     >
       <Container>
-        <Text style={{ color: 'red' }}>React Native</Text>
+        <MenuList />
       </Container>
     </ScrollView>
   )

@@ -1,6 +1,6 @@
 import styled from '@emotion/native'
 
-import { ColorProps, FlexboxProps, SpacingProps } from './boxProps'
+import { ColorProps, FlexboxProps, SpacingProps } from './interface'
 
 interface BoxProps extends SpacingProps, FlexboxProps, ColorProps {}
 
