@@ -1,10 +1,18 @@
 import React from 'react'
 import { ScrollView, Text } from 'react-native'
 
+import Container from '../../components/core/Container'
+
 function Home() {
   return (
-    <ScrollView>
-      <Text>React Native</Text>
+    <ScrollView
+      style={{
+        backgroundColor: '#ffffff',
+      }}
+    >
+      <Container>
+        <Text style={{ color: 'red' }}>React Native</Text>
+      </Container>
     </ScrollView>
   )
 }
