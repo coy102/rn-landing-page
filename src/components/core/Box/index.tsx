@@ -40,7 +40,7 @@ const Box = styled.View<BoxProps>({}, (props) => ({
   paddingLeft: props.px,
   paddingRight: props.px,
   paddingTop: props.py,
-  width: props.py,
+  width: props.width,
   maxWidth: props.maxWidth,
   minWidth: props.minWidth,
   height: props.height,

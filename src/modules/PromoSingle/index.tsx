@@ -2,31 +2,27 @@ import React, { memo } from 'react'
 import { TouchableOpacity } from 'react-native'
 
 import Box from '../../components/core/Box'
-import PromoItem from '../../components/PromoItem'
-
-import useHooks from './hooks'
+import Card from '../../components/core/Card'
+import HeaderContent from '../../components/HeaderContent'
+import { PromoData } from '../../utils/useSinglePromo/data'
 
 interface Props {
   label: string
-  promoId: number
+  promo: PromoData
   withIcon?: boolean
 }
 
-const PromoSingle = ({ label, promoId, withIcon }: Props) => {
-  const { memoPromo } = useHooks({
-    promoId,
-  })
-
+const PromoSingle = ({ label, promo, withIcon }: Props) => {
   return (
-    <Box my={10}>
+    <Box my={20}>
+      <HeaderContent label={label} withIcon={withIcon} />
+
       <TouchableOpacity>
-        <PromoItem
-          img={memoPromo?.img || ''}
-          label={label}
-          subtitle={memoPromo?.subTitle}
-          title={memoPromo?.title || ''}
+        <Card
+          img={promo?.img || ''}
+          subtitle={promo?.subTitle}
+          title={promo?.title || ''}
           titleSize={18}
-          withIcon={withIcon}
           titleBold
         />
       </TouchableOpacity>

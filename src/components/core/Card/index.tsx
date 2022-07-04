@@ -4,6 +4,7 @@ import { Image } from 'react-native'
 import { isEmpty } from 'lodash'
 
 import { colors } from '../../../styles/theme'
+import { numberSeparator } from '../../../utils/number'
 import Box from '../Box'
 import Typography from '../Typography'
 
@@ -11,7 +12,7 @@ import style from './style'
 
 export interface CardProps {
   img: string
-  price?: string
+  price?: number
   promo?: string
   subtitle?: string
   title: string
@@ -43,6 +44,13 @@ const Card = ({
       <Box mt={5}>
         <Typography color={colors.text.secondary} fontSize={16}>
           {subtitle}
+        </Typography>
+      </Box>
+    )}
+    {price && (
+      <Box mt={5}>
+        <Typography fontSize={16} fontWeight="bold">
+          Rp.{numberSeparator(price || 0)}
         </Typography>
       </Box>
     )}
