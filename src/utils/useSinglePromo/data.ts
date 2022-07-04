@@ -7,6 +7,8 @@ export interface PromoData {
   subTitle?: string
   soon?: boolean
   price?: number
+  promo?: string
+  rating?: number
 }
 
 export const promo: PromoData[] = [

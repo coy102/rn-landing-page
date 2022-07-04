@@ -12,7 +12,7 @@ import useSinglePromo from '../../utils/useSinglePromo/hooks'
 
 function Home() {
   const { getPromoById } = useSinglePromo()
-  const { memoFlashDiscount, memoOffers } = useMultiplePromo()
+  const { memoFlashDiscount, memoOffers, memoRestaurant } = useMultiplePromo()
 
   return (
     <ScrollView
@@ -29,10 +29,17 @@ function Home() {
           withIcon
         />
         <PromoMultiple promos={memoFlashDiscount} />
-        <PromoMultiple promos={memoOffers} isHorizontalView />
+        <PromoMultiple promos={memoOffers} isHorizontalView withIcon />
         <PromoSingle
           label={textLabel.langgananYuk}
           promo={getPromoById(2)}
+          withIcon
+        />
+        <PromoMultiple
+          promos={memoRestaurant}
+          titleSize={20}
+          isHorizontalView
+          titleBold
           withIcon
         />
       </Container>

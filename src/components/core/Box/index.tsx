@@ -4,6 +4,7 @@ import {
   BordersProps,
   ColorProps,
   FlexboxProps,
+  PositionsProps,
   SizingProps,
   SpacingProps,
 } from './interface'
@@ -13,6 +14,7 @@ interface BoxProps
     BordersProps,
     ColorProps,
     FlexboxProps,
+    PositionsProps,
     SizingProps {}
 
 const Box = styled.View<BoxProps>({}, (props) => ({
@@ -46,6 +48,7 @@ const Box = styled.View<BoxProps>({}, (props) => ({
   height: props.height,
   maxHeight: props.maxHeight,
   minHeight: props.minHeight,
+  position: props.position,
 }))
 
 export default Box

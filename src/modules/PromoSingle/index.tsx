@@ -1,9 +1,10 @@
 import React, { memo } from 'react'
-import { TouchableOpacity } from 'react-native'
+import { Pressable } from 'react-native'
 
 import Box from '../../components/core/Box'
 import Card from '../../components/core/Card'
 import HeaderContent from '../../components/HeaderContent'
+import theme from '../../styles/theme'
 import { PromoData } from '../../utils/useSinglePromo/data'
 
 interface Props {
@@ -17,7 +18,7 @@ const PromoSingle = ({ label, promo, withIcon }: Props) => {
     <Box my={20}>
       <HeaderContent label={label} withIcon={withIcon} />
 
-      <TouchableOpacity>
+      <Pressable android_ripple={{ color: theme.element.boxShadow }}>
         <Card
           img={promo?.img || ''}
           subtitle={promo?.subTitle}
@@ -25,7 +26,7 @@ const PromoSingle = ({ label, promo, withIcon }: Props) => {
           titleSize={18}
           titleBold
         />
-      </TouchableOpacity>
+      </Pressable>
     </Box>
   )
 }

@@ -44,3 +44,8 @@ let sizing: SimpleStyleFunction<
   'width' | 'maxWidth' | 'minWidth' | 'height' | 'maxHeight' | 'minHeight'
 >
 export type SizingProps = PropsFor<typeof sizing>
+
+let positions: SimpleStyleFunction<
+  'zIndex' | 'position' | 'top' | 'right' | 'bottom' | 'left'
+>
+export type PositionsProps = PropsFor<typeof positions>

@@ -2,6 +2,7 @@ export const colors = {
   palette: {
     primary: '#02b252',
     secondary: '#f9f9f9',
+    customPeach: '#e2d4d0',
   },
   text: {
     primary: '#636363',

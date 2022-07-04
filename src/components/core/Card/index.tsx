@@ -3,9 +3,11 @@ import { Image } from 'react-native'
 
 import { isEmpty } from 'lodash'
 
+import { icon } from '../../../config/image'
 import { colors } from '../../../styles/theme'
 import { numberSeparator } from '../../../utils/number'
 import Box from '../Box'
+import Chip from '../Chip'
 import Typography from '../Typography'
 
 import style from './style'
@@ -14,6 +16,7 @@ export interface CardProps {
   img: string
   price?: number
   promo?: string
+  rating?: number
   subtitle?: string
   title: string
   titleBold?: boolean
@@ -23,7 +26,8 @@ export interface CardProps {
 const Card = ({
   img,
   price,
-  promo,
+  promo = '',
+  rating,
   subtitle,
   title,
   titleBold,
@@ -44,6 +48,21 @@ const Card = ({
       <Box mt={5}>
         <Typography color={colors.text.secondary} fontSize={16}>
           {subtitle}
+          {rating && (
+            <>
+              <Typography> • </Typography>
+              <Image
+                source={{
+                  uri: icon.stars,
+                }}
+                style={{
+                  width: 10,
+                  height: 10,
+                }}
+              />
+              <Typography> {rating}</Typography>
+            </>
+          )}
         </Typography>
       </Box>
     )}
@@ -52,6 +71,11 @@ const Card = ({
         <Typography fontSize={16} fontWeight="bold">
           Rp.{numberSeparator(price || 0)}
         </Typography>
+      </Box>
+    )}
+    {!isEmpty(promo) && (
+      <Box flexDirection="row" mt={10}>
+        <Chip label={promo} />
       </Box>
     )}
   </Box>

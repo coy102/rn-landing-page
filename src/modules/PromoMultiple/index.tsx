@@ -1,25 +1,28 @@
 import React, { memo } from 'react'
-import { FlatList, TouchableOpacity } from 'react-native'
+import { FlatList, Pressable } from 'react-native'
 
 import Box from '../../components/core/Box'
 import Card from '../../components/core/Card'
 import HeaderContent from '../../components/HeaderContent'
+import theme from '../../styles/theme'
 import { PromoMultiData } from '../../utils/useMultiplePromo/data'
 
 interface Props {
-  isGrid?: boolean
   isHorizontalView?: boolean
+  titleBold?: boolean
+  titleSize?: number
   promos: PromoMultiData
   withIcon?: boolean
 }
 
 const PromoMultiple = ({
-  isGrid = false,
   isHorizontalView = false,
+  titleBold = false,
+  titleSize = 18,
   promos,
   withIcon,
 }: Props) => {
-  const horizontalView = promos.items.length > 2 && isHorizontalView && !isGrid
+  const horizontalView = promos.items.length > 2 && isHorizontalView
 
   return (
     <Box my={20}>
@@ -31,15 +34,18 @@ const PromoMultiple = ({
         numColumns={horizontalView ? 1 : 2}
         renderItem={({ item }) => (
           <Box key={item.id} px={4} width={horizontalView ? 200 : '50%'}>
-            <TouchableOpacity>
+            <Pressable android_ripple={{ color: theme.element.boxShadow }}>
               <Card
                 img={item?.img || ''}
                 subtitle={item?.subTitle}
                 title={item?.title || ''}
-                titleSize={18}
+                titleBold={titleBold}
+                titleSize={titleSize}
                 price={item?.price}
+                rating={item?.rating}
+                promo={item.promo}
               />
-            </TouchableOpacity>
+            </Pressable>
           </Box>
         )}
       />
