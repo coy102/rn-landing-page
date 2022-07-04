@@ -18,10 +18,10 @@ export const fontSize = {
   72: '4.5rem',
 }
 
-const colors = {
+export const colors = {
   palette: {
     primary: '#02b252',
-    secondary: 'f9f9f9',
+    secondary: '#f9f9f9',
   },
   text: {
     primary: '#636363',

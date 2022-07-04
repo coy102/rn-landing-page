@@ -1,6 +1,21 @@
 import { SimpleStyleFunction, PropsFor } from '../../../config/intefaces'
 
-let spacing: SimpleStyleFunction<'m' | 'mx' | 'my' | 'p' | 'px' | 'py'>
+let spacing: SimpleStyleFunction<
+  | 'm'
+  | 'mt'
+  | 'mr'
+  | 'mb'
+  | 'ml'
+  | 'mx'
+  | 'my'
+  | 'p'
+  | 'pt'
+  | 'pr'
+  | 'pb'
+  | 'pl'
+  | 'px'
+  | 'py'
+>
 
 export type SpacingProps = PropsFor<typeof spacing>
 
@@ -21,3 +36,11 @@ export type FlexboxProps = PropsFor<typeof flexbox>
 
 let colors: SimpleStyleFunction<'backgroundColor'>
 export type ColorProps = PropsFor<typeof colors>
+
+let borders: SimpleStyleFunction<'borderColor' | 'borderRadius'>
+export type BordersProps = PropsFor<typeof borders>
+
+let sizing: SimpleStyleFunction<
+  'width' | 'maxWidth' | 'minWidth' | 'height' | 'maxHeight' | 'minHeight'
+>
+export type SizingProps = PropsFor<typeof sizing>

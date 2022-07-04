@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
 
-import { menuList } from './data'
+import { metrics } from './data'
 
 const useHooks = () => {
-  const memoMenu = useMemo(() => menuList, [])
+  const memoMetrics = useMemo(() => metrics, [])
   return {
-    memoMenu,
+    memoMetrics,
   }
 }
 

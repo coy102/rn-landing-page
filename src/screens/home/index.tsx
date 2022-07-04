@@ -3,6 +3,7 @@ import { ScrollView } from 'react-native'
 
 import Container from '../../components/core/Container'
 import MenuList from '../../modules/MenuList'
+import MetricList from '../../modules/MetricList'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
     >
       <Container>
         <MenuList />
+        <MetricList />
       </Container>
     </ScrollView>
   )

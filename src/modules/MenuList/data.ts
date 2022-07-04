@@ -1,6 +1,6 @@
-import { imgUrl } from './constant'
+import { imgUrl } from '../../config/constant'
 
-const menuList = [
+export const menuList = [
   {
     label: 'Food',
     img: `${imgUrl}/menu/food.PNG`,
@@ -38,5 +38,3 @@ const menuList = [
     img: `${imgUrl}/menu/more.PNG`,
   },
 ]
-
-export default menuList

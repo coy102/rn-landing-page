@@ -10,15 +10,13 @@ const MenuList = () => {
   const { memoMenu } = useHooks()
 
   return (
-    <Box>
-      <ScrollView horizontal>
-        {memoMenu.map((menu) => (
-          <Box key={menu.label}>
-            <MenuButton label={menu.label} img={menu.img} />
-          </Box>
-        ))}
-      </ScrollView>
-    </Box>
+    <ScrollView horizontal>
+      {memoMenu.map((menu) => (
+        <Box key={menu.label}>
+          <MenuButton label={menu.label} img={menu.img} />
+        </Box>
+      ))}
+    </ScrollView>
   )
 }
 
