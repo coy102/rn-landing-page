@@ -3,6 +3,7 @@ export const colors = {
     primary: '#02b252',
     secondary: '#f9f9f9',
     customPeach: '#e2d4d0',
+    customBlue: '#0564ff',
   },
   text: {
     primary: '#636363',
