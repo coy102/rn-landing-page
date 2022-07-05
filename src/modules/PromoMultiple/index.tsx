@@ -47,6 +47,7 @@ const PromoMultiple = ({
                   price={item?.price}
                   rating={item?.rating}
                   promo={item.promo}
+                  chipLabel={item.info}
                 />
               </Pressable>
             </Box>

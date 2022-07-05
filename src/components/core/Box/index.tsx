@@ -49,6 +49,10 @@ const Box = styled.View<BoxProps>({}, (props) => ({
   maxHeight: props.maxHeight,
   minHeight: props.minHeight,
   position: props.position,
+  top: props.top,
+  bottom: props.bottom,
+  right: props.right,
+  left: props.left,
 }))
 
 export default Box

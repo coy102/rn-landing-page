@@ -13,6 +13,7 @@ import Typography from '../Typography'
 import style from './style'
 
 export interface CardProps {
+  chipLabel?: string
   img: string
   price?: number
   promo?: string
@@ -24,6 +25,7 @@ export interface CardProps {
 }
 
 const Card = ({
+  chipLabel = '',
   img,
   price,
   promo = '',
@@ -34,13 +36,21 @@ const Card = ({
   titleSize = 14,
 }: CardProps) => (
   <Box display="flex" flexDirection="column">
-    <Image
-      source={{
-        uri: img,
-      }}
-      resizeMode="contain"
-      style={style.cardImage}
-    />
+    <Box position="relative">
+      <Image
+        source={{
+          uri: img,
+        }}
+        resizeMode="contain"
+        style={style.cardImage}
+      />
+      {!isEmpty(chipLabel) && (
+        <Box position="absolute" left={5} top={25}>
+          <Chip label={chipLabel} severity={Severity.neutral} />
+        </Box>
+      )}
+    </Box>
+
     <Typography fontSize={titleSize} fontWeight={titleBold ? 'bold' : 'normal'}>
       {title}
     </Typography>

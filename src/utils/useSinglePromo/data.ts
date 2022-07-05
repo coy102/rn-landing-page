@@ -5,7 +5,7 @@ export interface PromoData {
   img: string
   title: string
   subTitle?: string
-  soon?: boolean
+  info?: string
   price?: number
   promo?: string
   rating?: number

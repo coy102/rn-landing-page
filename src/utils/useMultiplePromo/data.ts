@@ -13,13 +13,13 @@ export const flashDiscount: PromoMultiData = {
       id: 1,
       title: 'Nantikan promo diskon kilat',
       img: `${imgUrl}/promo/kilat1.jpg`,
-      soon: true,
+      info: 'Segera Hadir',
     },
     {
       id: 2,
       title: 'Pesan dari mana aja buat kesayangan',
       img: `${imgUrl}/promo/kilat2.PNG`,
-      soon: false,
+      info: '',
     },
   ],
 }
