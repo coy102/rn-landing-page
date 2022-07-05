@@ -11,6 +11,7 @@ export const colors = {
     customPeach: '#fff4eb',
     customBlue: '#0564ff',
     customPink: '#fd7e74',
+    customGrey: '#f9f9f9',
     neutral: '#000',
   },
   text: {

@@ -14,7 +14,7 @@ interface Props {
 const MetricItem = ({ img, title, value }: Props) => (
   <TouchableOpacity>
     <Box
-      backgroundColor={colors.palette.secondary}
+      backgroundColor={colors.palette.customGrey}
       borderRadius={4}
       display="flex"
       flexDirection="column"
