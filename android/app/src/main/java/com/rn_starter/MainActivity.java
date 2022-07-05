@@ -1,6 +1,7 @@
 package com.rn_landing_page;
 
 import com.facebook.react.ReactActivity;
+import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 

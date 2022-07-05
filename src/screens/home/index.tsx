@@ -13,7 +13,7 @@ import useBanner from '../../utils/useBanner'
 import useMultiplePromo from '../../utils/useMultiplePromo'
 import useSinglePromo from '../../utils/useSinglePromo/hooks'
 
-function Home() {
+const Home = () => {
   const { memoBaner } = useBanner()
   const { getPromoById } = useSinglePromo()
   const { memoFlashDiscount, memoOffers, memoRestaurant } = useMultiplePromo()
