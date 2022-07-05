@@ -49,3 +49,12 @@ let positions: SimpleStyleFunction<
   'zIndex' | 'position' | 'top' | 'right' | 'bottom' | 'left'
 >
 export type PositionsProps = PropsFor<typeof positions>
+
+let shadows: SimpleStyleFunction<
+  | 'shadowColor'
+  | 'shadowOffset'
+  | 'shadowOpacity'
+  | 'shadowRadius'
+  | 'elevation'
+>
+export type ShadowsProps = PropsFor<typeof shadows>

@@ -2,6 +2,7 @@ import React from 'react'
 import { ScrollView } from 'react-native'
 
 import Container from '../../components/core/Container'
+import SearchBox from '../../components/SearchBox'
 import { textLabel } from '../../config/constant'
 import MenuList from '../../modules/MenuList'
 import MetricList from '../../modules/MetricList'
@@ -21,6 +22,7 @@ function Home() {
       }}
     >
       <Container>
+        <SearchBox />
         <MenuList />
         <MetricList />
         <PromoSingle
