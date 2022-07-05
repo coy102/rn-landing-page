@@ -22,7 +22,7 @@ const PromoMultiple = ({
   titleBold = false,
   titleSize = 18,
   promos,
-  withIcon,
+  withIcon = false,
 }: Props) => {
   const horizontalView = promos.items.length > 2 && isHorizontalView
 
