@@ -9,6 +9,7 @@ import Typography from '../Typography'
 import { SEVERITY_MAPPING } from './helper'
 
 interface Props {
+  borderRadius?: any
   label: string
   severity?: Severity
 }
@@ -21,12 +22,17 @@ const StyledChip = styled(Box)<StyledChipProps>({}, (props) => ({
   backgroundColor: SEVERITY_MAPPING[props.severity].backgroundColor,
 }))
 
-const Chip = ({ label, severity = Severity.neutral }: Props) => (
+const Chip = ({
+  borderRadius = 4,
+  label,
+  severity = Severity.neutral,
+}: Props) => (
   <StyledChip
-    p={5}
+    px={6}
+    py={2}
     maxWidth={120}
     backgroundColor={colors.palette.customPeach}
-    borderRadius={4}
+    borderRadius={borderRadius}
     severity={severity}
   >
     <Typography color={SEVERITY_MAPPING[severity].color} numberOfLines={1}>

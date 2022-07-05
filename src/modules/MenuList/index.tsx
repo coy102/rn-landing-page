@@ -13,7 +13,7 @@ const MenuList = () => {
     <ScrollView horizontal>
       {memoMenu.map((menu) => (
         <Box key={menu.label}>
-          <MenuButton label={menu.label} img={menu.img} />
+          <MenuButton label={menu.label} img={menu.img} info={menu.info} />
         </Box>
       ))}
     </ScrollView>

@@ -1,6 +1,7 @@
 export enum Severity {
   warning = 'warning',
   neutral = 'neutral',
+  info = 'info',
 }
 
 export const colors = {
@@ -9,6 +10,7 @@ export const colors = {
     secondary: '#f9f9f9',
     customPeach: '#fff4eb',
     customBlue: '#0564ff',
+    customPink: '#fd7e74',
     neutral: '#000',
   },
   text: {

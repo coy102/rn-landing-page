@@ -9,4 +9,8 @@ export const SEVERITY_MAPPING = {
     backgroundColor: colors.palette.neutral,
     color: colors.background.default,
   },
-}
+  [Severity.info]: {
+    backgroundColor: colors.palette.customPink,
+    color: colors.background.default,
+  },
+} as any
