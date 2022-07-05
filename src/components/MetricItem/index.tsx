@@ -14,11 +14,11 @@ interface Props {
 const MetricItem = ({ img, title, value }: Props) => (
   <TouchableOpacity>
     <Box
+      backgroundColor={colors.palette.secondary}
+      borderRadius={4}
       display="flex"
       flexDirection="column"
       p={6}
-      backgroundColor={colors.palette.secondary}
-      borderRadius={4}
     >
       <Box mb={5}>
         <Typography fontSize={14}>{title}</Typography>

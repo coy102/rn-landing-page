@@ -13,23 +13,23 @@ interface Props {
 
 const Banner = ({ img, subTitle, title }: Props) => (
   <Box
+    alignItems="center"
     backgroundColor={colors.palette.customBlue}
     display="flex"
     flexDirection="row"
-    alignItems="center"
     height={150}
   >
     <Box flexGrow={1} mx={10}>
       <Box mb={5}>
         <Typography
-          fontSize={20}
           color={colors.background.default}
+          fontSize={20}
           fontWeight="bold"
         >
           {title}
         </Typography>
       </Box>
-      <Typography fontSize={16} color={colors.background.default}>
+      <Typography color={colors.background.default} fontSize={16}>
         {subTitle}
       </Typography>
     </Box>

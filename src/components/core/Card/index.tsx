@@ -38,12 +38,13 @@ const Card = ({
   <Box display="flex" flexDirection="column">
     <Box position="relative">
       <Image
+        resizeMode="contain"
         source={{
           uri: img,
         }}
-        resizeMode="contain"
         style={style.cardImage}
       />
+      {/* Render sticky chip when chipLabel is not empty  */}
       {!isEmpty(chipLabel) && (
         <Box position="absolute" left={5} top={25}>
           <Chip label={chipLabel} severity={Severity.neutral} />
@@ -54,6 +55,7 @@ const Card = ({
     <Typography fontSize={titleSize} fontWeight={titleBold ? 'bold' : 'normal'}>
       {title}
     </Typography>
+    {/* Render subtitle when subtitle is not empty  */}
     {!isEmpty(subtitle) && (
       <Box mt={4}>
         <Typography color={colors.text.secondary} fontSize={16}>
@@ -76,6 +78,7 @@ const Card = ({
         </Typography>
       </Box>
     )}
+    {/* Render price when price is not empty  */}
     {price && (
       <Box mt={5}>
         <Typography fontSize={16} fontWeight="bold">
@@ -83,6 +86,7 @@ const Card = ({
         </Typography>
       </Box>
     )}
+    {/* Render promo when promo is not empty  */}
     {!isEmpty(promo) && (
       <Box flexDirection="row" mt={10}>
         <Chip severity={Severity.warning} label={promo} />

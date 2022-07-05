@@ -10,14 +10,14 @@ import style from './style'
 
 const SearchBox = () => (
   <Box
-    mt={-30}
-    mb={10}
-    p={12}
+    alignItems="center"
+    backgroundColor={colors.background.default}
     display="flex"
     flexDirection="row"
-    alignItems="center"
+    mb={10}
+    mt={-30}
+    p={12}
     style={style.searchBox}
-    backgroundColor={colors.background.default}
   >
     <Box mr={8}>
       <Image

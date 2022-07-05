@@ -1,6 +1,7 @@
 import { SimpleStyleFunction, PropsFor } from '../../../config/intefaces'
 
 let typography: SimpleStyleFunction<
+  | 'color'
   | 'fontFamily'
   | 'fontSize'
   | 'fontStyle'
@@ -8,7 +9,6 @@ let typography: SimpleStyleFunction<
   | 'letterSpacing'
   | 'lineHeight'
   | 'textAlign'
-  | 'color'
 >
 
 export type TypographyProps = PropsFor<typeof typography>

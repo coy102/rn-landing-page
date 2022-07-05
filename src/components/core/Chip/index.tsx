@@ -28,11 +28,11 @@ const Chip = ({
   severity = Severity.neutral,
 }: Props) => (
   <StyledChip
-    px={6}
-    py={2}
-    maxWidth={120}
     backgroundColor={colors.palette.customPeach}
     borderRadius={borderRadius}
+    maxWidth={120}
+    px={6}
+    py={2}
     severity={severity}
   >
     <Typography color={SEVERITY_MAPPING[severity].color} numberOfLines={1}>

@@ -13,14 +13,14 @@ interface Props {
 
 const ChallengeCard = ({ img, subTitle, title }: Props) => (
   <Box
+    alignItems="flex-start"
     borderColor={colors.palette.secondary}
     borderRadius={5}
     borderWidth={1}
-    p={6}
-    mr={6}
     display="flex"
     flexDirection="row"
-    alignItems="flex-start"
+    mr={6}
+    p={6}
     width={300}
   >
     <Box mr={3}>
@@ -34,16 +34,16 @@ const ChallengeCard = ({ img, subTitle, title }: Props) => (
         }}
       />
     </Box>
-    <Box pt={12} mr={5}>
-      <Typography numberOfLines={1} fontSize={18} fontWeight="bold" mb={8}>
+    <Box mr={5} pt={12}>
+      <Typography mb={8} fontSize={18} fontWeight="bold" numberOfLines={1}>
         {title}
       </Typography>
-      <Typography fontSize={16} color={colors.text.secondary} mb={8}>
+      <Typography mb={8} color={colors.text.secondary} fontSize={16}>
         {subTitle}
       </Typography>
       <Typography
-        fontSize={16}
         color={colors.palette.customBlue}
+        fontSize={16}
         fontWeight="bold"
         mb={15}
       >

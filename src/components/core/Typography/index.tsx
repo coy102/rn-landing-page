@@ -14,8 +14,8 @@ const Typography = styled.Text<Props>({}, (props) => ({
   fontWeight: props.fontWeight,
   letterSpacing: props.letterSpacing,
   lineHeight: props.lineHeight,
-  textAlign: props.textAlign,
   marginBottom: props.mb,
+  textAlign: props.textAlign,
 }))
 
 export default Typography

@@ -17,6 +17,7 @@ const BottomNav = ({ children }: Props) => (
     screenOptions={({ route }) => ({
       headerShown: false,
       tabBarIcon: ({ focused }) => {
+        // Get icon from routeIcon
         const activeIcon = focused
           ? routeIcon[route.name].iconActive
           : routeIcon[route.name].icon

@@ -27,6 +27,7 @@ const MenuButton = ({ img, info = '', label }: Props) => (
             height: 50,
           }}
         />
+        {/* Render stiky chip on image */}
         {!isEmpty(info) && (
           <Box position="absolute" right={0} top={0}>
             <Chip label={info} borderRadius={25} severity={Severity.info} />
