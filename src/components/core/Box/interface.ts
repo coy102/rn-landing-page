@@ -37,7 +37,7 @@ export type FlexboxProps = PropsFor<typeof flexbox>
 let colors: SimpleStyleFunction<'backgroundColor'>
 export type ColorProps = PropsFor<typeof colors>
 
-let borders: SimpleStyleFunction<'borderColor' | 'borderRadius'>
+let borders: SimpleStyleFunction<'borderColor' | 'borderRadius' | 'borderWidth'>
 export type BordersProps = PropsFor<typeof borders>
 
 let sizing: SimpleStyleFunction<

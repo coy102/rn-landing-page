@@ -28,7 +28,7 @@ const PromoMultiple = ({
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <Box my={20}>
+      <Box my={10}>
         <HeaderContent label={promos.headerLabel} withIcon={withIcon} />
 
         <FlatList

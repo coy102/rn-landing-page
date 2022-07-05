@@ -15,7 +15,7 @@ interface Props {
 
 const PromoSingle = ({ label, promo, withIcon }: Props) => {
   return (
-    <Box my={20}>
+    <Box my={10}>
       <HeaderContent label={label} withIcon={withIcon} />
 
       <Pressable android_ripple={{ color: theme.element.boxShadow }}>

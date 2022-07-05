@@ -7,7 +7,7 @@ export enum Severity {
 export const colors = {
   palette: {
     primary: '#02b252',
-    secondary: '#f9f9f9',
+    secondary: '#ececec',
     customPeach: '#fff4eb',
     customBlue: '#0564ff',
     customPink: '#fd7e74',

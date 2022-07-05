@@ -41,7 +41,7 @@ const Box = styled.View<BoxProps>({}, (props) => ({
   paddingBottom: props.py,
   paddingLeft: props.px,
   paddingRight: props.px,
-  paddingTop: props.py,
+  paddingTop: props.pt,
   width: props.width,
   maxWidth: props.maxWidth,
   minWidth: props.minWidth,
@@ -53,6 +53,7 @@ const Box = styled.View<BoxProps>({}, (props) => ({
   bottom: props.bottom,
   right: props.right,
   left: props.left,
+  borderWidth: props.borderWidth,
 }))
 
 export default Box
