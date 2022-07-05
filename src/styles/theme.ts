@@ -1,9 +1,15 @@
+export enum Severity {
+  warning = 'warning',
+  neutral = 'neutral',
+}
+
 export const colors = {
   palette: {
     primary: '#02b252',
     secondary: '#f9f9f9',
-    customPeach: '#e2d4d0',
+    customPeach: '#fff4eb',
     customBlue: '#0564ff',
+    neutral: '#000',
   },
   text: {
     primary: '#636363',

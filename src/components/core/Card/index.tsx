@@ -4,7 +4,7 @@ import { Image } from 'react-native'
 import { isEmpty } from 'lodash'
 
 import { icon } from '../../../config/image'
-import { colors } from '../../../styles/theme'
+import { colors, Severity } from '../../../styles/theme'
 import { numberSeparator } from '../../../utils/number'
 import Box from '../Box'
 import Chip from '../Chip'
@@ -75,7 +75,7 @@ const Card = ({
     )}
     {!isEmpty(promo) && (
       <Box flexDirection="row" mt={10}>
-        <Chip label={promo} />
+        <Chip severity={Severity.warning} label={promo} />
       </Box>
     )}
   </Box>
