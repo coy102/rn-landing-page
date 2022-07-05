@@ -45,7 +45,7 @@ const Card = ({
       {title}
     </Typography>
     {!isEmpty(subtitle) && (
-      <Box mt={5}>
+      <Box mt={4}>
         <Typography color={colors.text.secondary} fontSize={16}>
           {subtitle}
           {rating && (

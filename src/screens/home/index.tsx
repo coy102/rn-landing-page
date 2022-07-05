@@ -19,7 +19,13 @@ const Home = () => {
   const { color, dark, onScroll } = useScroll()
   const { memoBaner } = useBanner()
   const { getPromoById } = useSinglePromo()
-  const { memoFlashDiscount, memoOffers, memoRestaurant } = useMultiplePromo()
+  const {
+    memoFlashDiscount,
+    memoGrabMart,
+    memoOffers,
+    memoRestaurant,
+    memoSpesialPromo,
+  } = useMultiplePromo()
 
   return (
     <ScrollView
@@ -58,6 +64,12 @@ const Home = () => {
           isHorizontalView
           titleBold
           withIcon
+        />
+        <PromoMultiple promos={memoGrabMart} titleSize={20} />
+        <PromoMultiple
+          promos={memoSpesialPromo}
+          titleSize={20}
+          isHorizontalView
         />
       </Container>
     </ScrollView>

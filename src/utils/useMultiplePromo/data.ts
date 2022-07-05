@@ -125,3 +125,65 @@ export const restaurantRecomendation: PromoMultiData = {
     },
   ],
 }
+
+export const spesialPromo: PromoMultiData = {
+  headerLabel: 'Promo unlimited spesial buat kamu',
+  items: [
+    {
+      id: 1,
+      title: 'Cuma Rp1, promonya unlimited',
+      img: `${imgUrl}/promo/spesial1.PNG`,
+    },
+    {
+      id: 2,
+      title: 'Gratis ongkir tiap pesen makan',
+      img: `${imgUrl}/promo/spesial2.PNG`,
+    },
+    {
+      id: 4,
+      title: 'Diskon terus-terusan',
+      img: `${imgUrl}/promo/spesial3.PNG`,
+    },
+    {
+      id: 5,
+      title: 'Gratis ongkir tiap belanja',
+      img: `${imgUrl}/promo/spesial4.PNG`,
+    },
+    {
+      id: 6,
+      title: 'Gratis ongkir tiap kirim barang',
+      img: `${imgUrl}/promo/spesial5.PNG`,
+    },
+    {
+      id: 3,
+      title: 'Hemat banyak dengan GrabUnlimited',
+      img: `${imgUrl}/promo/spesial6.PNG`,
+    },
+  ],
+}
+
+export const promoGrabMart: PromoMultiData = {
+  headerLabel: 'Belanja pagi cepat & hemat',
+  items: [
+    {
+      id: 1,
+      title: 'Apel manis pagi hari',
+      img: `${imgUrl}/promo/mart1.PNG`,
+    },
+    {
+      id: 2,
+      title: 'Buat favorit harga irit',
+      img: `${imgUrl}/promo/mart2.PNG`,
+    },
+    {
+      id: 4,
+      title: 'Kiwi segar bernutrisi',
+      img: `${imgUrl}/promo/mart3.PNG`,
+    },
+    {
+      id: 5,
+      title: 'Alpukat sehat harga hemat',
+      img: `${imgUrl}/promo/mart4.PNG`,
+    },
+  ],
+}
